@@ -126,7 +126,6 @@ body {
 
 .main-content{
     width:50%;
-
     padding-left: 6%;
 }
 
@@ -134,29 +133,14 @@ body {
     text-align: center;
     font-size: 3rem;
     width:100%;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
+    padding-right: 12%;
 }
 
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    cursor: default;
-}
-
-.hover-underline-animation::after {
-    background: var(--important-element-color) none repeat scroll 0 0;
-    bottom: 2%;
-    content: "";
-    display: block;
-    height: 5px;
-    position: absolute;
-    transition: width 0.6s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.hover-underline-animation:hover::after {
-    width: 100%;
-    left: 0;
+    text-decoration: underline;
+    text-decoration-color: var(--important-element-color);
+    text-decoration-thickness: 5px;
 }
 
 .timeline-context {
